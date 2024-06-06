@@ -1,0 +1,280 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+            text-decoration: none;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .container{
+            position: relative;
+            width: 100;
+        }
+        .sidebar{
+            position: fixed;
+            width: 300px;
+            height: 100%;
+            background: linear-gradient(45deg, #47cebe,#ef4a82);
+            overflow-x: hidden;
+            box-shadow: o 4px 8px 0 rgba(0,0,0,0.2);
+            z-index: 2
+        }
+        .sidebar ul li{
+            width: 100%;
+            list-style: none;
+        } 
+        .sidebar ul li:hover{
+            background: #444;
+        }
+        .sidebar ul li:first-child{
+            line-height: 60px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 1px solid #fff;
+        }
+        .sidebar ul li:first-child:hover{
+            background: none;
+        }
+        .sidebar ul li a{
+            width: 100%;
+            text-decoration: none;
+            color: #fff;
+            height: 44px;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a i{
+            min-width: 60px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .sidebar .title{
+            padding: 0 10px;
+            font-size: 20px;
+        }
+        .navdiv{
+            display: flex;
+            background: linear-gradient(45deg, #47cebe,#ef4a82);
+        }
+        .navbar{
+            background: #444;
+            width: auto;
+            height: 90px;
+            position: sticky;
+            top: 0;
+        }
+        h3{
+            padding-left: 350px;
+            font-size: xx-large;
+          color: aliceblue;
+          padding-top: 30px;
+        }
+        .btn{
+            margin-left: 550px;
+            padding-top: 5px;
+        }
+        .btn1{
+            background: linear-gradient(45deg, #47cebe,#ef4a82);
+            border-radius: 10px;
+            margin: 20px;
+            height: 50px;
+            width: 90px;
+            font-size: 20px;
+            font-color: white;
+        }
+        button a{
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .btn1:hover{
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+        }
+        .card1,.card2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           padding-left: 190px;
+           
+        
+        }
+        .cd1,.cd2{
+            width:400px;
+            height:230px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #47cebe,#ef4a82);
+            margin-left: 100px;
+            
+        }
+        
+        .cd3,.cd4{
+            width:400px;
+            height:230px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #47cebe,#ef4a82);
+            margin-left: 100px;
+
+           
+        }
+        .img2{
+            width: 400px;
+            height: 220px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="logout">
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="/">
+                        <i class="fa-solid fa-house"></i>
+                        <div class="title">Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="managestaff">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <div class="title">Manage Staff</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="addstaff">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <div class="title">Add Staff</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="managestudent">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <div class="title">Manage Student</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="addstudent">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <div class="title">Add Student</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="managecourse">
+                        <i class="fa-solid fa-book-open"></i>
+                        <div class="title">Manage Course</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="addcourse">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <div class="title">Add Course</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="managesubject">
+                        <i class="fa-solid fa-book"></i>
+                        <div class="title">Manage Subject</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="addsubject">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <div class="title">Add Subject</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="managesession">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <div class="title">Manage Session</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="addsession">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div class="title">Add Session</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="manageattend">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <div class="title">View Attendance</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="managestudentfeedback">
+                        <i class="fa-solid fa-comment"></i>
+                        <div class="title">Student Feedback</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="managestafffeedback">
+                        <i class="fa-solid fa-comment"></i>
+                        <div class="title">Staff Feedback</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="managestaffleave">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div class="title">Staff Leave</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="managestudentleave">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div class="title">Student Leave</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar">
+            <div class="navdiv">
+                <h3>Welcome : {{request.session.fname}}</h3>
+                <div class="btn">
+                    <button class="btn1"><a href="/">Logout</a></button>
+                    
+                </div>
+            </div>
+           </nav>
+        </div>
+        <br>
+        <br>
+        <div class="card1">
+        <div class="cd1">
+        <img class="img2" src="{% static 'images/student.jpg'%}">
+        </div>
+        <div class="cd2">
+
+        <img class="img2" src="{% static 'images/staff.jpg'%}">
+            </div>
+        </div>
+        <br><br><br>
+        <div class="card2">
+            <div class="cd3">
+               
+
+                <img class="img2" src="{% static 'images/subject.jpg'%}">
+            
+                </div>
+                <div class="cd4">
+                   
+
+                    <img class="img2" src="{% static 'images/coures.jpg'%}">
+                </div>
+            </div>
+    </div>
+</body>
+</html>

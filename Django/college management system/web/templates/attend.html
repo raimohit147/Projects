@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form action="attendsave" method="post">
+        {% csrf_token %}<br>
+        <fieldset>
+            <button><a href="back">BACK</a></button><br>
+        <legend>ATTENDANCE SHEET</legend>
+        <p>Name</p><input type="text" placeholder="Enter Name" name="attend">
+        <p>Date</p><input type="date" name="date">
+        <p>Day</p><input type="text" placeholder="Enter Day" name="day"><br><br>
+        Attendance:<label for="present">present</label>
+        <input type="radio" name="p" value="present">
+        <label for="absent">Absent</label>
+        <input type="radio" name="p" value="absent"><br><br>
+        <button>Save</button>
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

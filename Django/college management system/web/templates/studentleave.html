@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+           
+            width: 90px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        textarea{
+            border-radius:10px;
+            height:140px;
+            font-size:30px;
+        }
+        legend{
+            font-size:30px;
+        }
+        p{
+            font-size:25px;
+        }
+    </style>
+</head>
+<body><br>
+    <form action="studentleavesave" method="post">
+        {% csrf_token %}
+        
+        <fieldset>
+            <legend>APPLICATION FOR LEAVE</legend><br>
+            Name:<input type="text" placeholder="enter name" name="student1"></input>
+            <p>Leave Date</p><input type="date" name="leave"></input>
+            <p>End Leave Date</p><input type="date" name="eleave"></input>
+
+            <p>Leave Reson:</p><textarea row="4" col="50" placeholder='Write Here' name="comment"></textarea>
+            
+            <br><br>
+           
+        <button>Apply</button>
+        </fieldset>
+        </form>
+</body>
+</html>

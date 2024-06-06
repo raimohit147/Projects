@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+           
+            width: 90px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        textarea{
+            border-radius:10px;
+            height:140px;
+            font-size:30px;
+        }
+        legend{
+            font-size:30px;
+        }
+        p{
+            font-size:25px;
+        }
+        input{
+            width:290px;
+            height:30px;
+        }
+    </style>
+</head>
+<body><br>
+    <form action="studentfeedbacksave" method="post">
+        {% csrf_token %}
+        
+        <fieldset>
+            <legend>STUDENT FEEDBACK</legend>
+            <p>Name</p><input type="text" placeholder="enter name" name="name"></input>
+
+            <p>Feedback</p><textarea row="4" col="50" placeholder='Write Here' name="msgg"></textarea>
+            
+            <br><br>
+           
+        <button>Send</button>
+        </fieldset>
+        </form>
+</body>
+</html>

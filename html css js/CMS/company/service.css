@@ -1,0 +1,95 @@
+*{
+    text-decoration: none; 
+    }
+    body{
+        background-image:linear-gradient(white,orange,white,grey)  ; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        } 
+   .navbar{
+   background: black;  
+   width: auto;
+   height: 100px; 
+   position: sticky;
+top: 0; 
+   }
+   li:hover{
+    background-color:orangered;
+    
+}
+   img{
+       width: 80px;
+       height: 80px;
+       padding:8px;
+       border-radius: 35px;
+    }
+   .navdiv {
+   display: flex; 
+   }
+   li{
+   text-align: center;
+   margin: 20px;
+   list-style: none; 
+   display: inline-block;
+   }
+   li a{
+    margin: 0 10px;
+   color: white; 
+   font-size:18px; 
+   font-weight: bold;
+   }
+   .btn1,.btn2{
+       background-color: white; 
+        border-radius: 10px; 
+        margin:20px;
+        height: 50px;
+        width: 90px;
+    }
+   button a{
+   color:black;
+   font-weight: bold;
+   font: size 15px;
+   }
+   .btnall{
+       margin-left: 450px;
+   }
+   .btn1:hover{
+    background-color: orangered;
+       }
+        .btn2:hover{
+        background-color: orangered;
+           }
+           .admin{
+            text-align: center;
+             font-size: 50px;   
+             }
+          
+          .card1,.card2{
+             display: flex;
+             align-items: center;
+             justify-content:center;
+             gap: 120px;
+               }
+               .cd1,.cd2,.cd3,.cd4,.cd5,.cd6 {
+                 height: 250px;
+                 width: 300px;
+                 border-radius: 10px;
+                 color:white;
+                 background-color: orangered;
+                 text-align: center;
+               }   
+         
+         
+         .icons{
+             text-align: center;
+             color: orangered;
+            }
+            i{
+             margin: 0 10px;
+            }
+         p{
+         text-align: center;
+         }
+    
+   
+   

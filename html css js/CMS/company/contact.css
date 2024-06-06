@@ -1,0 +1,115 @@
+*{
+    text-decoration: none; 
+    }
+    body{
+        background-image:linear-gradient(white,orange,white,grey)  ; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        } 
+   .navbar{
+   background: black;  
+   width: auto;
+   height: 100px; 
+   position: sticky;
+top: 0; 
+   }
+   li:hover{
+    background-color:orangered;
+}
+   img{
+       width: 80px;
+       height: 80px;
+       padding:8px;
+       border-radius: 35px;
+    }
+   .navdiv {
+   display: flex; 
+   }
+   li{
+   text-align: center;
+   margin: 20px;
+   list-style: none; 
+   display: inline-block;
+   }
+   li a{
+    margin: 0 10px;
+   color: white; 
+   font-size:18px; 
+   font-weight: bold;
+   }
+   .btn1,.btn2{
+       background-color: white; 
+        border-radius: 10px; 
+        margin:20px;
+        height: 50px;
+        width: 90px;
+        
+    }
+    
+   button a{
+   color:black;
+   font-weight: bold;
+   font: size 15px;
+   }
+   .btnall{
+       margin-left: 450px;
+   }
+   .btn1:hover{
+    background-color: orangered;
+       }
+        .btn2:hover{
+        background-color: orangered;
+           }
+           h1{
+text-align: center;
+           }
+           h3{
+text-align: center;
+           }
+           h5{
+text-align: center;
+           }
+           .form{
+            height: 450px;
+            width: 600px;
+            border: solid 2px black;
+            border-radius: 10px;
+             margin-left: 460px;
+             backdrop-filter: blur(10px);
+            
+           } 
+           .btn3{
+            background-color: white; 
+            border-radius: 10px; 
+            height: 50px;
+            width: 90px;
+            color:black;
+            font-weight: bold;
+            font: size 15px;
+            margin-left: 240px;
+               }
+               .btn3:hover{
+                background-color: orangered;
+                   }
+                   input{
+                    margin-left: 135px;
+                    text-align:center;
+                    color:black;
+                    font-weight: bold;
+                    font: size 15px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(200, 196, 196);
+                   }
+                   .icons{
+                    text-align: center;
+                    color: orangered;
+                   }
+                   i{
+                    margin: 0 10px;
+                   }
+    p{
+        text-align: center;
+    }

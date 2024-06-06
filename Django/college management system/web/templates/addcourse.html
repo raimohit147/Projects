@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><br>
+    <form action="addcoursesave" method="post">
+        {% csrf_token %}
+        <h2>ADD COURSE</h2>
+        <fieldset>
+            <legend>COURSE</legend><br>
+            COURSE NAME : <select name="cname">
+            <option value="BSC">Enter Course</option>
+            <option value="BSC">BSC</option>
+            <option value="B.TECH">B.TECH</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="BE">BE</option>
+            <option value="M.TECH">M.TECH</option>
+           </select>
+           <label for="age">STAFF NAME : <input type="text" name="sname" ></label>
+           <button>ADDED</button>
+        </form>
+</body>
+</html>

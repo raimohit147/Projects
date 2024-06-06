@@ -1,0 +1,134 @@
+*{
+ text-decoration: none;
+ }
+  body{
+ background-image:linear-gradient(white,orange,white,grey)  ; 
+ background-repeat: no-repeat;
+ background-size: cover;
+ } 
+.navbar{
+ background: black;   
+width: auto;
+height: 100px; 
+position: sticky;
+top: 0; 
+}
+li:hover{
+    background-color:orangered;
+}
+.img1{
+    width: 80px;
+    height: 80px;
+    padding:8px;
+    border-radius: 35px;
+ }
+.navdiv {
+display: flex; 
+}
+li{
+text-align: center;
+margin: 20px;
+list-style: none; 
+display: inline-block;
+}
+li a{
+margin: 0 10px;
+color: white; 
+font-size:18px; 
+font-weight: bold;
+}
+.btn1,.btn2{
+    background-color: white; 
+     border-radius: 10px; 
+     margin:20px;
+     height: 50px;
+     width: 90px;
+ }
+ 
+button a{
+color:black;
+font-weight: bold;
+font: size 15px;
+}
+.btnall{
+    margin-left: 450px;
+}
+ .img2{
+    width:100%;
+
+} 
+.btn1:hover{
+    background-color: orangered;
+       }
+.btn2:hover{
+    
+    background-color: orangered;
+           }
+ .admin{
+   text-align: center;
+    font-size: 50px;   
+    }
+ .brief{
+        text-align: center;
+      }
+ .card1,.card2{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+      }
+      .cd1,.cd2,.cd3,.cd4,.cd5,.cd6,.cd7,.cd8  {
+        height: 250px;
+        width: 250px;
+        border-radius: 10px;
+        color:white;
+        background-color: orangered;
+        text-align: center;
+      }   
+.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9{
+    width: 250px;
+    height: 200px;
+}
+.btn3,.btn4,.btn5,.btn6,.btn7,.btn8,.btn9,.btn10{
+    background-color: white; 
+     border-radius: 10px; 
+     height: 20px;
+     width: 100px;
+     cursor:pointer;
+}
+.btn3:hover{
+    background-color:orangered;
+}
+.btn4:hover{
+    background-color:orangered;
+}
+.btn5:hover{
+    background-color:orangered;
+}
+.btn6:hover{
+    background-color:orangered;
+}
+.btn7:hover{
+    background-color:orangered;
+}
+.btn8:hover{
+    background-color:orangered;
+}
+.btn9:hover{
+    background-color:orangered;
+}
+.btn10:hover{
+    background-color:orangered;
+}
+
+
+.icons{
+    text-align: center;
+    color: orangered;
+   }
+   i{
+    margin: 0 10px;
+   }
+p{
+text-align: center;
+}

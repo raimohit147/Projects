@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Flip</title>
+    <style> 
+     #logo{
+      position: absolute;
+      transition: transform 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div>
+     <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFoiQewwb2KpguZIiai8-t5y4Ra0GvLeTr4uu-6BXyTvD0u00AoEG2UBX010bj0I_5xGQ&usqp=CAU" width="250" style="transform: translate(853px, 75px) rotateY(0deg) translateZ(0px);">
+    </div>
+    <script>
+        const logo = document.getElementById('logo');
+        const logoWidth = logo.offsetWidth;
+        const logoHeight = logo.offsetHeight;
+document.addEventListener('click', function(event) {
+const mouseX = event.clientX - (logoWidth / 2);
+const mouseY = event.clientY - (logoHeight/ 2);
+const dx = mouseX - logo.offsetLeft;
+const dy = mouseY - logo.offsetTop;
+const angle = Math.atan2(dy, dx) * (180 /Math.PI);
+const flipDirection = dx < 0 ? 'rotateY(180deg)' : 'rotateY(0deg)';
+logo.style.transform  = `translate(${mouseX}px, ${mouseY}px) ${flipDirection} translateZ(0)`;
+});
+    </script>
+</body>
+</html>

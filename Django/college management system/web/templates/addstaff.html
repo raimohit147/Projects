@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><br>
+    <form action="addstaffsave" method="post">
+        {% csrf_token %}
+        <h3>ADD STAFF</h2>
+        <fieldset>
+            <legend>BASIC DETAILS</legend>
+           <label for="fname"> First Name<input type="text" name="fname" ></label><br><br> 
+           <label for="lname"> Last Name<input type="text" name="lname" ></label>
+           <br><br>
+        <div>
+
+           <label for="age"> Age<input type="age" name="age" ></label> </div>
+           <div>
+            <br>
+           <label for="address">address<input type="text" name="address"></label>
+        </div>
+        <br>
+           <div>
+            Gender:-Male<input type="radio" name="r1" >
+            Female<input type="radio" name="r1" >
+           </div>
+
+
+        </fieldset><br>
+        <fieldset>
+            <legend>EDUCAION DETAILS</legend>
+           Enter Your High School Name<input type="text" name="hname">
+           Percentage<input type="number" name="per">
+           <br><br>
+           Enter Your Higher School Name<input type="text" name="hsname">
+           Percentage<input type="number" name="percent">
+           <br><br>
+           
+           Enter Your Graduation Name<input type="text" name="gname">
+           Enter Your Subject<input type="text" name="sname">
+           Percentage<input type="number" name="percentage">
+           <br><br>
+           
+           Enter Your Post Graduation Name<input type="text" name="pname">
+           Enter Your Subject<input type="text" name="cname">
+           Percentage<input type="number" name="per2">
+           
+           
+           
+           
+        </fieldset><br>
+        <fieldset>
+          <legend>OTHER DETAILS </legend>
+          Addhar no<input type="text" name="anum"><br><br>
+          Phone number<input type="text" name="pnum"><br><br>
+          Email<input type="email" name="email">
+          
+
+        </fieldset><br>
+        <button>ADDED</button>
+        </form>
+</body>
+</html>

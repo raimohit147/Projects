@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            button{
+           
+                width: 90px;
+                height: 30px;
+                cursor: pointer;
+                font-size: 20px;
+                border-radius: 10px;
+            }
+            textarea{
+                border-radius:10px;
+                height:140px;
+                font-size:30px;
+            }
+            legend{
+                font-size:30px;
+            }
+            p{
+                font-size:25px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="staffreplysave" method="post"><br>
+            {% csrf_token %}
+        <fieldset>
+        <legend>STAFF LEAVE REPLY</legend>
+        <p>TO STAFF:</p><textarea row="4" col="50" placeholder='Write Here....' name="reply"></textarea><br><br>
+        <button>Send</button><br><br>
+        </fieldset>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

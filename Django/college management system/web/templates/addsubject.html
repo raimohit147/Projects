@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><br>
+    <form action="addsubjectsave" method="post">
+        {% csrf_token %}
+        <fieldset>
+            <legend>ADD SUBJECT</legend>
+           <label for="first"> Subject Name : <br><input type="text" name="sub" ></label><br><br> 
+           <label for="last"> Course Name : <br><input type="text" name="cou" ></label>
+           <br><br>
+           <label for="staff"> Staff Name : <br><input type="text" name="staff"></label><br><br>   
+        <button>ADDED</button> </fieldset>    
+        </form>
+</body>
+</html>

@@ -1,0 +1,107 @@
+*{
+    text-decoration: none; 
+    }
+    body{
+        background-image:linear-gradient(white,orange,white,grey)  ; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        } 
+   .navbar{
+   background: black;  
+   width: auto;
+   height: 100px; 
+   position: sticky;
+top: 0; 
+   }
+   li:hover{
+    background-color:orangered;
+}
+.admin{
+    text-align: center;
+     font-size: 50px;   
+     }
+  .brief{
+         text-align: center;
+       }
+h1{
+    text-align: center;
+    
+}
+h4{
+    text-align: center;
+}
+   .img1{
+       width: 80px;
+       height: 80px;
+       padding:8px;
+       border-radius: 35px;
+    }
+   .navdiv {
+   display: flex; 
+   }
+   li{
+   text-align: center;
+   margin: 20px;
+   list-style: none; 
+   display: inline-block;
+   }
+   li a{
+    margin: 0 10px;
+   color: white; 
+   font-size:18px; 
+   font-weight: bold;
+   }
+   .btn1,.btn2{
+       background-color: white; 
+        border-radius: 10px; 
+        margin:20px;
+        height: 50px;
+        width: 90px;
+    }
+   button a{
+   color:black;
+   font-weight: bold;
+   font: size 15px;
+   }
+   .btnall{
+       margin-left: 450px;
+   }
+   
+.left{
+    background-image:linear-gradient(white,orange,white,grey)  ; 
+  float:left;
+  width: 50%;
+  height: 600px;
+  border-radius: 30px;
+}
+.right{
+    float: right;
+    width: 50%;
+    height: 600px;
+    gap: 5px;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 30px;
+} 
+.img2{
+    height: 600px;
+}
+
+.btn1:hover{
+    background-color: orangered;
+       }
+        .btn2:hover{
+        background-color: orangered;
+           }
+ .icons{
+            text-align: center;
+            color: orangered;
+           }
+  i{
+            margin: 10px 10px ;
+           }
+p{
+text-align: center;
+}
+          

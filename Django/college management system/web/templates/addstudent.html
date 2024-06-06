@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><br>
+    <form action="addstudentsave" method="post">
+        {% csrf_token %}
+        <h2>ADD STUDENT</h2>
+        <fieldset>
+            <legend>BASIC DETAILS</legend>
+           <label for="first"> First Name<input type="text" name="first" ></label><br><br> 
+           <label for="last"> Last Name<input type="text" name="last" ></label>
+           <br><br>
+        <div>
+
+           <label for="age"> Age<input type="age" name="age" ></label> </div>
+           <div>
+            <br>
+           <label for="area">address<input type="text" name="area"></label>
+        </div>
+        <br>
+           <div>
+            Gender:-Male<input type="radio" name="r1" >
+            Female<input type="radio" name="r1" >
+           </div>
+        </fieldset><br>
+        <fieldset>
+            <legend>EDUCAION DETAILS</legend>
+           Enter Your High School Name<input type="text" name="hname">
+           Percentage<input type="number" name="per">
+           <br><br>
+           Enter Your Higher School Name<input type="text" name="hsname">
+           Percentage<input type="number" name="percent">
+           <br><br>
+        </fieldset><br>
+        <fieldset>
+          <legend>OTHER DETAILS </legend>
+          Addhar no<input type="text" name="anum"><br><br>
+          Phone number<input type="text" name="pnum"><br><br>
+          Email<input type="email" name="email">
+        </fieldset><br>
+        <button>ADDED</button>
+        </form>
+</body>
+</html>

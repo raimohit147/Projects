@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form action="saveresult" method="post">
+            {% csrf_token %}<br>
+            <fieldset>
+            <button><a href="back">BACK</a></button><br>
+            <legend>RESULT SHEET</legend>
+            <p>Name</p><input type="text" placeholder="Enter Name" name="name"><br><br>
+            Result:<label for="pass">Pass</label>
+            <input type="radio" name="res" value="pass">
+            <label for="fail">Fail</label>
+            <input type="radio" name="res" value="fail"><br><br>
+            <button>Save</button>
+    
+        
+        <script src="" async defer></script>
+    </body>
+</html>
